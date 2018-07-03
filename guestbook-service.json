@@ -1,0 +1,21 @@
+{
+   "kind":"Service",
+   "apiVersion":"v1",
+   "metadata":{
+      "name":"guestbook",
+      "labels":{
+         "app":"guestbook"
+      }
+   },
+   "spec":{
+      "ports": [
+         {
+           "port": 80,
+           "targetPort": 3000
+         }
+      ],
+      "selector":{
+         "app":"guestbook"
+      }
+   }
+}
